@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Card, CardContent } from "./components/ui/card";
-import { Button } from './components/ui/button';
+import { Card, CardContent } from "./src/components/ui/card";
+import { Button } from "./src/components/ui/button";
 
 export default function PomodoroTimer() {
   const [timeLeft, setTimeLeft] = useState(25 * 60);
@@ -112,7 +112,7 @@ export default function PomodoroTimer() {
         transition: 'background-image 0.5s ease-in-out',
       }}
     >
-      <Card className="w-96 h-auto p-6 bg-white/80 backdrop-blur-md shadow-2xl rounded-2xl">
+      <Card className="w-full max-w-md mx-auto p-6 bg-white/80 backdrop-blur-md shadow-2xl rounded-2xl">
         <CardContent>
           <motion.h1
             className="text-xl font-bold mb-4 text-center"
