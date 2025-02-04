@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "./components/ui/card";
-import { Button } from '@/components/ui/button';
+import { Button } from './components/ui/button';
 
 export default function PomodoroTimer() {
   const [timeLeft, setTimeLeft] = useState(25 * 60);
